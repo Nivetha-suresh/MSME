@@ -1,0 +1,40 @@
+from tkinter import *
+from tkinter import messagebox
+import os
+a=Tk()
+a.geometry("400x500")
+def addition():
+    n1 = int(num1.get())
+    n2 = int(num2.get())
+    print("addition:",n1+n2)
+def subtraction():
+    n1 = int(num1.get())
+    n2 = int(num2.get())
+    print("subtraction:",n1-n2)
+def multiple():
+    n1 = int(num1.get())
+    n2 = int(num2.get())
+    print("multiple:",n1*n2)
+def division():
+    n1 = int(num1.get())
+    n2 = int(num2.get())
+    print("division:",n1/n2)
+l=Label(a,text="Simple Calculator",fg="green")
+l.grid(row=0,column=2)
+badd=Button(a,text="add",bg="purple",command=addition)
+bsub=Button(a,text="sub",bg="purple",command=subtraction)
+bmul=Button(a,text="mul",bg="purple",command=multiple)
+bdiv=Button(a,text="div",bg="purple",command=division)
+badd.grid(row=1,column=2)
+bsub.grid(row=2,column=2)
+bmul.grid(row=3,column=2)
+bdiv.grid(row=4,column=2)
+l1=Label(a,text="number1")
+l1.grid(row=5,column=1)
+num1=Entry(a)
+num1.grid(row=5,column=2)
+l2=Label(a,text="number2")
+l2.grid(row=6,column=1)
+num2=Entry(a)
+num2.grid(row=6,column=2)
+a.mainloop()
