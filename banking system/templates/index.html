@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Indian Bank</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Indian Bank</h1>
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <ul class="flashes">
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+
+        {% if user %}
+            <h2>Hello, {{ user.name }}</h2>
+            <p>Your Account Number: {{ user.accno }}</p>
+            <p>Your Current Balance: Rupees {{ user.check_balance() }}</p>
+        {% else %}
+            <h2>Create an Account</h2>
+        {% endif %}
+
+        <form method="POST">
+            {% if not user %}
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="text" name="acc_no" placeholder="Enter your account number" required>
+                <button type="submit" name="create_account">Create Account</button>
+            {% else %}
+                <input type="number" name="amount" placeholder="Enter amount" required>
+                <button type="submit" name="deposite">Deposit</button>
+                <button type="submit" name="withdraw">Withdraw</button>
+            {% endif %}
+        </form>
+    </div>
+</body>
+</html>
