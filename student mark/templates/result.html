@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Result</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Student Result</h1>
+        <table>
+            <tr>
+                <th>Name</th>
+                <td>{{ student.name }}</td>
+            </tr>
+            <tr>
+                <th>Registration Number</th>
+                <td>{{ student.regno }}</td>
+            </tr>
+        </table>
+        <h2>Marks and Grades</h2>
+        <table>
+            <tr>
+                <th>Subject</th>
+                <th>Marks</th>
+                <th>Grade</th>
+            </tr>
+            <tr>
+                <td>Physics</td>
+                <td>{{ student.phy }}</td>
+                <td>{{ grades[0] }}</td>
+            </tr>
+            <tr>
+                <td>Chemistry</td>
+                <td>{{ student.chem }}</td>
+                <td>{{ grades[1] }}</td>
+            </tr>
+            <tr>
+                <td>Mathematics</td>
+                <td>{{ student.math }}</td>
+                <td>{{ grades[2] }}</td>
+            </tr>
+            <tr>
+                <td>Computer Science</td>
+                <td>{{ student.csc }}</td>
+                <td>{{ grades[3] }}</td>
+            </tr>
+            <tr>
+                <td>English</td>
+                <td>{{ student.eng }}</td>
+                <td>{{ grades[4] }}</td>
+            </tr>
+            <tr>
+                <td>Tamil</td>
+                <td>{{ student.tam }}</td>
+                <td>{{ grades[5] }}</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>Total Marks</th>
+                <td>{{ total }}</td>
+            </tr>
+            <tr>
+                <th>Average Marks</th>
+                <td>{{ avg }}</td>
+            </tr>
+            <tr>
+                <th>Result</th>
+                <td>{{ result }}</td>
+            </tr>
+        </table>
+        <a href="/">Go Back</a>
+    </div>
+</body>
+</html>
