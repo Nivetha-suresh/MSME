@@ -23,4 +23,25 @@ Internship cum skill development in Ministry of Micro, Small and Medium Enterpri
 
 4.Banking System Project with Flask (Day 10): The week culminated in a substantial project: creating a banking system.  This involved building both the backend logic and a frontend interface using the Flask framework.  This project brought together my knowledge of data structures, OOP, and web development principles.
 
+# WEEK-3  
+
+1.Functions & Classes:
+ Building reusable code blocks with functions and creating blueprints for objects with classes. Practical application through a bank management system project.
+
+2.Object-Oriented Programming (OOP):
+*Inheritance: Exploring different inheritance types:
+ >Single: One derived class inherits from one base class.
+ >Multiple: One derived class inherits from multiple base classes.
+ >Multilevel: A derived class inherits from a base class, which in turn inherits from another base class.
+ >Hierarchical: Multiple derived classes inherit from the same base class.
+ >Hybrid: A combination of different inheritance types.
+*super() method: Calling methods from parent classes for code reuse and cleaner OOP. Practical examples with shapes, area calculations, and employee salary classes.
+*Dunder (Magic) Methods: Special methods like _init_ and _str_ for operator overloading and class behavior customization.
+*Polymorphism: Objects responding uniquely to the same method, improving code flexibility.
+*Exception Handling: Using try, except, and finally blocks for robust error management.
+
+3.Web Development:
+*HTML: Learning fundamental HTML tags for structuring web pages.
+*Flask Framework: Introduction to Flask and its key methods for building dynamic and interactive web applications.
+
 I'm excited to continue this learning journey and delve into more advanced Python concepts.
