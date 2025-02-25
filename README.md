@@ -39,9 +39,18 @@ Internship cum skill development in Ministry of Micro, Small and Medium Enterpri
 *Dunder (Magic) Methods: Special methods like _init_ and _str_ for operator overloading and class behavior customization.
 *Polymorphism: Objects responding uniquely to the same method, improving code flexibility.
 *Exception Handling: Using try, except, and finally blocks for robust error management.
-
+>
 3.Web Development:
 *HTML: Learning fundamental HTML tags for structuring web pages.
 *Flask Framework: Introduction to Flask and its key methods for building dynamic and interactive web applications.
 
 I'm excited to continue this learning journey and delve into more advanced Python concepts.
+
+#WEEK-4
+
+1.Entrepreneurship: Explored future vision, employee vs. employer mindsets, financial management (including savings and investments), and business support schemes.
+2.Web Development (HTML & Flask):Deepened understanding of backend integration. Improved web development workflow knowledge.
+3.Gained hands-on experience:
+ -Student details management system.
+ -Hotel menu creation (HTML).
+ -Hotel menu integration with Flask.
